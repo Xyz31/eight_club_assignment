@@ -17,11 +17,9 @@ class _TempscreenState extends State<Tempscreen> {
         child: Stack(
           children: [
             // image
-            Container(
-              child: Image.asset(
-                ImageDirectory.backgroundImage,
-                fit: BoxFit.fill,
-              ),
+            Image.asset(
+              ImageDirectory.backgroundImage,
+              fit: BoxFit.fill,
             )
 
             // body
@@ -29,9 +27,5 @@ class _TempscreenState extends State<Tempscreen> {
         ),
       ),
     );
-  }
-
-  Widget _buildBody(BuildContext context) {
-    return Column();
   }
 }

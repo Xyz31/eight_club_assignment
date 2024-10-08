@@ -1,8 +1,6 @@
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:project_eight_second/app_state/getx_controller/page_navigation_controller.dart';
 import 'package:project_eight_second/utils/app_colors.dart';
@@ -203,7 +201,7 @@ class _OnBoardingQuestionscreenState extends State<OnBoardingQuestionscreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 12,
             ),
             Expanded(

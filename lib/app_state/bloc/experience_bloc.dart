@@ -21,7 +21,7 @@ class ExperienceBloc extends Bloc<ExperienceEvent, ExperienceState> {
         // emit the response (which is already a List<Experience>)
         emit(ExperienceLoaded(response));
       } catch (e) {
-        emit(ExperienceError('Failed to load experiences'));
+        emit(const ExperienceError('Failed to load experiences'));
       }
     });
   }

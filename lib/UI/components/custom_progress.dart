@@ -68,7 +68,7 @@ class SnakeProgressPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round;
 
     final Paint progressPaint = Paint()
-      ..color = Color(0xFF9196FF)
+      ..color = const Color(0xFF9196FF)
       ..strokeWidth = 3
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;

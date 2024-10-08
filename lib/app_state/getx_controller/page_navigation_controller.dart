@@ -10,7 +10,8 @@ class NavigationController extends GetxController {
     if (currentPage.value < 1) {
       currentPage.value++;
       pageController.nextPage(
-          duration: Duration(milliseconds: 100), curve: Curves.easeInCubic);
+          duration: const Duration(milliseconds: 100),
+          curve: Curves.easeInCubic);
     }
   }
 
@@ -19,7 +20,7 @@ class NavigationController extends GetxController {
     if (currentPage.value > 0) {
       currentPage.value--;
       pageController.previousPage(
-          duration: Duration(milliseconds: 100), curve: Curves.easeInOut);
+          duration: const Duration(milliseconds: 100), curve: Curves.easeInOut);
     }
   }
 }
